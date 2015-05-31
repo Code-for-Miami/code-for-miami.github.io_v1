@@ -5,6 +5,7 @@ Thumbs.db
 .DS_Store
 *.DS_Store
 ._*
+.idea
 
 # Build Folders (you can keep bin if you'd like, to store dlls and pdbs)
 [Bb]in/
