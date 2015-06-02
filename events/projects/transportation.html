@@ -150,10 +150,28 @@
 
     <h3>Challenges:</h3>
     <ul>
-        <li><a href="http://gis.mdc.opendata.arcgis.com/datasets?q=Transportation&sort_by=name&sort_order=asc"><strong>Transportation</strong></a>
-        <li><a href="http://hackforchange.org/challenges/citysdk/"><strong>citysdk</strong></a>
-        <li><a href="http://hackforchange.org/challenges/mapping-america/"><strong>Mapping America</strong></a>: Create maps that help explain and communicate issues facing your neighbors.
-        <li><a href="http://hackforchange.org/challenges/local-digital-services-census/"><strong>Local Digital Services Census</strong></a>
+        <li><p><strong>How do we change the perception of public transit?</strong> Contrary to popular belief, public transit is widely used in Miami, but is thought of more as a social service. What can be done to change these perceptions?</p></li>
+        <li><p><strong>What if all Miami-Dade regional transit was a unified, cohesive system?</strong> There are county-run Metrorails, Metromovers and busses, not to mention trolley buses managed and run by municipalities (and not on Google Transit).  Because there are few maps show all modes of transportation in one place, it’s not easy to know if you can get from points A to B through public transportation.</p>
+
+        <p>How could we visualize these options so Miamians can make informed decisions on how to best get to work using multiple agencies? How would all the agencies look on one map?</p>
+
+        <ul><li>
+        <p>A Code for Miami volunteer <a href="http://www.qtrandev.com/transit/">built this prototype</a> (<a href="https://github.com/qtrandev/LeafletTransit">Github</a>): could we iterate on this and make it more useful for everyday Miamians?</p></li>
+        </li></ul>
+
+        <li><p>A few county bus lines and municipal trolleys do have real-time tracking, but they are not in GTFS-RT format. <strong>Convert those APIs into a GTFS-RT format so we can spin up an experimental deployment of <a href="https://github.com/OneBusAway/onebusaway/wiki">OneBusAway</a>, an open-source bus prediction system.</strong></p>
+
+        <p>Note: There is a <a href="https://github.com/CyberStrike/miami-transit-api/pull/9#issuecomment-97080359">pull request open for the proxy transit API to allow for GTFS-RT</a>, but it looks like some conversations still need to happen as far as formatting.</p>
+
+        <p>“Matt Hampel put together a <a href="http://hampelm.github.io/bus-map/">basic map that hits the Detroit Department of Transit (DDOT) OneBusAway API</a> (<a href="https://github.com/hampelm/bus-map">Github</a>). It's delay-focused, partly to help us see if the system is working properly, partly to help DDOT folks see an overview of the system, but it might be a handy set of calls to the API to use as an example.”</p>
+        </li>
+    </ul>
+
+    <h3>Available data:</h3>
+    <ul>
+        <li><a href="https://github.com/Code-for-Miami/Miami-Dade-Transit-Developers/wiki/Regionwide-Transit-Agencies-and-APIs"><strong>A wiki of municipal shuttles, and the non-realtime GTFS of Miami-Dade Transit</strong></a></li>
+        <li><a href="http://miami-transit-api.herokuapp.com/"><strong>Brigade created API which provides transit data for ten real-time busses in Miami-Dade County and trolleys for the City of Miami.</strong></a> (<a href="https://github.com/CyberStrike/miami-transit-api">Github</a>)</li>
+        <li><a href="http://gis.mdc.opendata.arcgis.com/datasets?q=Transportation&sort_by=name&sort_order=asc"><strong>Transit related information from the Miami-Dade GIS portal</strong></a></li>
     </ul>
 
     <hr>
